@@ -23,5 +23,7 @@ Options:
   -l, --list-ids       Limit for jobs on error state to trigger critical
                        status
 ```
-
+Example:
+```
 icinga_bacula_check.py -a https://backups.benocs.com/api/ -u icinga -p password
+```
