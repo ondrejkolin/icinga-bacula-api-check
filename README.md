@@ -1,4 +1,10 @@
-```
+# Icinga Bacula plugin
+
+This is a simple extension, which does over HTTP API check on failed jobs. It differs running jobs, waiting jobs and failed jobs. Limits can be adjusted. Currenty only `http basic auth` is supported
+
+## Usage and example
+ 
+ ```
 Usage: icinga_bacula_check.py [options]
 
 Options:
@@ -17,3 +23,5 @@ Options:
   -l, --list-ids       Limit for jobs on error state to trigger critical
                        status
 ```
+
+icinga_bacula_check.py -a https://backups.benocs.com/api/ -u icinga -p password
