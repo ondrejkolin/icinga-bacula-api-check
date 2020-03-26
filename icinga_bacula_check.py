@@ -63,7 +63,7 @@ if __name__ == '__main__':
     import sys
 
     parser = OptionParser()
-    parser.add_option('-a', '--api', dest="api_url", help="Base api url like https://bacula.benocs.com/api/", nargs=1)
+    parser.add_option('-a', '--api', dest="api_url", help="Base api url like https://bacula.benocs.com/api/v1", nargs=1)
     parser.add_option('-u', '--api-user', dest="api_user", help="API Http authentication username")
     parser.add_option('-p', '--api-password', dest="api_password", help="API Http authentication password")
     parser.add_option('-w', dest="waiting_warning", help="Limit for jobs on waiting state to trigger warning status", default=1, type=int)
